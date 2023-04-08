@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Review Services Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-8dUfOs6wvT6y7q6T3f9WY+t6nEz6RGGqvJG2jBfLDJhKvC0eM/PT2MWX8W7jPvJNpL+3L/NzKpV7JC1tN4DWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		.rating {
+			font-size: 40px;
+			color: #ffd700;
+			cursor: pointer;
+		}
+		.rating:hover,
+		.rating:hover ~ .rating {
+			color: #f7d871;
+		}
+		.rating:checked ~ .rating {
+			color: #ffd700;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Review Services</h1>
+		<form>
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" id="name" placeholder="Enter your name">
+			</div>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control" id="email" placeholder="Enter your email">
+			</div>
+			<div class="form-group">
+				<label for="service">Service:</label>
+				<select class="form-control" id="service">
+						<option value="">--Select--</option>
+						<option value="Service 1">Service 1</option>
+						<option value="Service 2">Service 2</option>
+						<option value="Service 3">Service 3</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="rating">Rating:</label>
+				<div class="rating">
+					<input type="radio" name="rating" value="5" id="5"><label class="fas fa-star" for="5"></label>
+					<input type="radio" name="rating" value="4" id="4"><label class="fas fa-star" for="4"></label>
+					<input type="radio" name="rating" value="3" id="3"><label class="fas fa-star" for="3"></label>
+					<input type="radio" name="rating" value="2" id="2"><label class="fas fa-star" for="2"></label>
+					<input type="radio" name="rating" value="1" id="1"><label class="fas fa-star" for="1"></label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="comment">Comment:</label>
+				<textarea class="form-control" id="comment" rows="3"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body> </html>
